@@ -1,0 +1,433 @@
+/*font: Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+html, body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+
+}
+
+footer {
+    display: flex;
+    min-height: 50px;
+    align-items: flex-end;
+    width: 100%;
+}
+.title2{
+    font-size: 100px;
+}
+/*haut de la page*/
+header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #141414be;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    align-items: center;    
+    border-bottom: 1px solid #2c2c2d;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+.titre {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #f1f0ea;
+    transition-duration: 0.2s;
+}
+#titre {
+    width: 20%;
+    margin-left: 7%;
+}
+
+.titre:hover {
+    color: #29585c;
+    cursor: default;
+}
+
+#empty-box {
+    display: flex;
+    width: 69.26px;
+    height: 200px;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-underline-offset: 2px;
+    font-style: Roboto;
+    flex-wrap: wrap;
+}
+#Welcome {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#Welcome-Text {
+    flex: 1;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+#Welcome-Button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 50%;
+}
+.image-styled:hover {
+    border-top: 4px solid #29585c;
+    border-left: 4px solid #29585c;
+    border-right: 4px solid #29585c;
+    transform: translateY(-5px);
+}
+.image-styled{
+    height: auto;
+    max-width: 500px; 
+    border-top: 4px solid rgb(66, 66, 66);
+    border-left: 4px solid rgb(66, 66, 66);
+    border-right: 4px solid rgb(66, 66, 66);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+    transition-duration: 0.2s;
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 60%);
+    z-index: 2;
+}
+.underline {
+    text-decoration-line: underline
+}
+
+/*Verifier*/
+#Verify{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#Verify-Image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#Verify-Text {
+    flex: 1;
+    padding-right: 10px;
+    justify-content: center;
+    text-align: start;
+}
+
+/*mm*/
+#Middleman{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#Middleman-Text{
+    flex: 1;
+    padding-right: 10px;
+    justify-content: center;
+    text-align: end;
+}
+#Middleman-Image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#Services-Text{
+    flex: 1;
+    padding-right: 10px;
+    justify-content: center;
+    text-align: end;
+}
+#Services-Image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact-Infos{
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    display: flex;
+    background-color: #141414;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    align-self: flex-end;
+    border-top: 1px solid #2c2c2d;
+
+}
+#margin-left {
+    width: 15%;
+}
+#margin-right {
+    width: 15%;
+}
+
+/*font*/
+.white {
+    font-family: Roboto;
+    color: #f1f0ea;
+    a{
+        color: #f1f0ea;
+    }
+}
+.subtitle {
+    font-family: Roboto;;
+}
+.gray {
+    font-family: Roboto;
+    color: hwb(180 16% 82%);
+}
+/*palette de couleures à utiliser : blanc ivoire #f1f0ea; orange #e07a5f; bleu metalisé sombre #3d405b; vert menthe #29585c; jaune citron pastel #f2cc8f, bleu ciel#B4D4FF*/
+.background-black {
+    background-color: #141414
+}
+
+/*Dropdown Button*/
+.dropbtn {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    color: #f1f0ea;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid #2c2c2d;
+    margin-left: 5px;
+    transition-duration: 0.2s;
+    font-family: Roboto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: 5px;
+    transition: transform 0.2s ease; 
+}
+
+.dropbtn:hover .arrow {
+    transform: translateX(5px); 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    color: #f1f0ea;
+    background-color: #1d1d1d;
+    border: solid 1px #2c2c2d;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+    position: absolute;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-family: Roboto;
+    backdrop-filter: blur(5px);
+}
+
+.dropdown-content a {
+    color: #f1f0ea;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.4s;
+    font-family: Roboto;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #29585c;
+    border-radius: 10px;
+    color: #f1f0ea;
+    font-family: Roboto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #29585c;
+    color: #f1f0ea;
+}
+.center {
+    justify-content: center;
+}
+.check-button {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    color: #f1f0ea;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid #2c2c2d;
+    margin-left: 5px;
+    transition-duration: 0.2s;
+    font-family: Roboto;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.check-button:hover {
+    background-color: #29585c;
+    color: #f1f0ea;
+}
+#discordinput, #feeinput {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    color: #f1f0ea;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid #2c2c2d;
+    margin-left: 5px;
+    transition-duration: 0.2s;
+    font-family: Roboto;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* General Styles for mobile */
+@media screen and (max-width: 945px) {
+    body {
+        margin: 0;
+    }
+
+    #header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title2 {
+        font-size: 50px;
+    }
+    #titre {
+        width: auto;
+        justify-content: center;
+    }
+    #Middleman {
+        flex-direction: column;
+        align-items: center;
+    }
+    #Welcome {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Welcome-Button {
+        width: 100%;
+    }
+
+    #Welcome-Text {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    #Services{
+        flex-direction: column;
+        align-items: center;
+    }
+    #Verify {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #Middleman {
+        flex-direction: column;
+        text-align: center;
+    }
+    #Middleman-Text, #Verify-Text, #Services-Text {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .button, .dropbtn, .check-button {
+        min-width: 100%;
+        padding: 14px;
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+        position: relative;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+}
+
+/* Adjusting for very small screens (phones in portrait mode) */
+@media screen and (max-width: 480px) {
+    #content{
+        text-align: center;
+    }
+    .title2 {
+        font-size: 50px;
+    }
+
+    #header {
+        padding: 10px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .gray {
+        font-size: 14px;
+    }
+    #Welcome-Button img, #Middleman-Image img, #Verify-Image img {
+        width: 80%;
+        margin-top: 10px;
+    }
+    #Verify{
+        flex-direction: column;
+        align-items: center;
+    }
+    #Middleman{
+        flex-direction: column;
+        align-items: center; 
+    }
+}
